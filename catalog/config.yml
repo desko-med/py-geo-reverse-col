@@ -1,0 +1,4 @@
+model-name: "Geo Reverse Colombia"
+aws-settings:
+  s3-data-key: "s3://bucket-name/model_geonequi/data/"
+  s3-output-key: "s3://bucket-name/data_co/incremental/nequilogs/loginservice/client_geopositions/"

@@ -1,0 +1,17 @@
+properties:
+  DPTO_CCDGO:
+    descripcion: "Codigo del departamento"
+    alias: "cod_departamento"
+  MPIO_CCDGO:
+    descripcion: "Codigo que identifica al municipio"
+    alias: "cod_municipio"
+  MPIO_CCNCT:
+    descripcion: "Codigo depto & Codigo Municipio"
+    alias: "cod_dane"
+  DPTO_CNMBR:
+    descripcion: "Nombre del departamento"
+    alias: "departamento"
+  MPIO_CNMBR:
+    descripcion: "Nombre del municipio"
+    alias: "municipio"
+

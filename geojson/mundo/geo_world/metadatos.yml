@@ -1,0 +1,4 @@
+properties:
+  ADMIN:
+    descripcion: "Nombre del pais"
+    alias: "nombre_pais"
