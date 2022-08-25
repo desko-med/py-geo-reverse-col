@@ -25,7 +25,7 @@ Proyecto para hacer "reverse geocoding" a los insumos (CSV) que contengan como m
 |   |-- data
 |   |   `-- loginservice_geoposition_0000_part_00
 |   `-- results
-|       `-- nequi_georeverse_predictions_001_2022-08-23-KJNYD48R.parquet
+|       `-- georeverse_results_001_2022-08-23-KJNYD48R.parquet
 |-- settings
 |   `-- __init__.py
 |-- utils
