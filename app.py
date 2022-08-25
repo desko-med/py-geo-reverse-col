@@ -218,8 +218,8 @@ class GeoReversePipeline:
             for idx, line in enumerate(csv_reader, start=1):
                 row_n = idx
 
-                lat_ = line['latitude_client']
-                long_ = line['longitude_client']
+                lat_ = line['latitude']
+                long_ = line['longitude']
 
                 # Iteramos por todos los mapas y obtenemos la respuesta como un diccionario segun las columnas
                 # de la configuracion
@@ -241,23 +241,6 @@ class GeoReversePipeline:
                 line.update(
                     **geohash_response
                 )
-
-                # world_response = self.do_georeverse_geopip(
-                #     lat=lat_, long=long_, columns=self.world_columns_, geopip_=self.geopip_world)
-                # divipola_response = self.do_georeverse_geopip(
-                #     lat=lat_, long=long_, columns=self.divipola_columns_, geopip_=self.geopip_divipola)
-                # zu_response = self.do_georeverse_geopip(
-                #     lat=lat_, long=long_, columns=self.zu_columns_, geopip_=self.geopip_zu)
-                #
-                # # Geohash
-                # geohash_response = {'geohash': self.calcultate_geohash(lat=lat_, long=long_)}
-                #
-                # line.update(
-                #     **world_response,
-                #     **divipola_response,
-                #     **zu_response,
-                #     **geohash_response
-                # )
 
                 self.df_result.append(line)
 

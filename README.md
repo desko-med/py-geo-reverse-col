@@ -46,8 +46,13 @@ Proyecto para hacer "reverse geocoding" a los insumos (CSV) que contengan como m
   - results: acá quedará el resultado
 
 #### Nota:
+- Los geojson son bastante pesados, por ende no están cargados en el repo. Por fa descarguelos de forma local y los agrega a la carpeta que corresponda.
+- los archivos que vamos a leer deben tener estas caracteristicas:
+  - Delimitador por pipe '|'
+  - Con encabezados
+  - Debe tener estas 2 columnas (o nombrarlas de la siguiente manera): latitude, longitude
 
-Los geojson son bastante pesados, por ende no están cargados en el repo. Por fa descarguelos de forma local y los agrega a la carpeta que corresponda.
+
 
 ### Funcionamiento
 
@@ -61,7 +66,8 @@ En el ```run()```, el flujo se ejecuta en el siguiente orden:
 4. Se itera por cada uno de los archivos
 5. Se itera por cada uno de los registros
 6. Se hace la búsqueda usando ```geopip.search``` en la función ```do_georeverse_geopip()```
-7. Se crea un archivo tipo json usando ```make_file_predictions()```.
+7. Se calcula el [geohash](https://en.wikipedia.org/wiki/Geohash)
+8. Se crea un archivo tipo json usando ```make_file_predictions()```.
 
 ### Tip
 ```
